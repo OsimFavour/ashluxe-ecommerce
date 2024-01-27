@@ -60,76 +60,91 @@ const SignUp = () => {
                     action=""
                     onSubmit={formik.handleSubmit}
                 >
-                    <CustomInput
-                        type='text' 
-                        name='first_name' 
-                        placeholder='First Name' 
-                        value={formik.values.first_name}
-                        onChange={formik.handleChange('first_name')}
-                        onBlur={formik.handleBlur('first_name')}
-                    />
-
-                    <div className="error">
-                        {formik.touched.first_name && formik.errors.first_name}
-                    </div>
-
-
-                    <CustomInput 
-                        type='text' 
-                        name='last_name' 
-                        placeholder='Last Name' 
-                        value={formik.values.last_name}
-                        onChange={formik.handleChange('last_name')}
-                        onBlur={formik.handleBlur('last_name')}
-                    />
-
-                    <div className="error">
-                        {formik.touched.last_name && formik.errors.last_name}
-                    </div>
-
-
-                    <CustomInput 
-                        type='password' 
-                        name='password' 
-                        placeholder='Password'
-                        value={formik.values.password}
-                        onChange={formik.handleChange('password')}
-                        onBlur={formik.handleBlur('password')}
-                    />
-
-                    <div className="error">
-                        {formik.touched.password && formik.errors.password}
-                    </div>
-
-
-                    <CustomInput 
-                        type='email' 
-                        name='email' 
-                        placeholder='Email' 
-                        value={formik.values.email}
-                        onChange={formik.handleChange('email')}
-                        onBlur={formik.handleBlur('email')}
-                    />
-
-                    <div className="error">
-                        {formik.touched.email && formik.errors.email}
-                    </div>
-
-
-                    <CustomInput 
-                        type='tel' 
-                        name='phone_no' 
-                        placeholder='Phone Number'  
-                        className='mt-1 mb-3' 
-                        value={formik.values.phone_no}
-                        onChange={formik.handleChange('phone_no')}
-                        onBlur={formik.handleBlur('phone_no')}
-                    />
-
-                    <div className="error">
-                        {formik.touched.phone_no && formik.errors.phone_no}
-                    </div>
+                    <div className="input-box">
+                        <label htmlFor="first_name"><strong>First Name</strong></label>
                     
+                        <CustomInput
+                            type='text' 
+                            name='first_name' 
+                            value={formik.values.first_name}
+                            onChange={formik.handleChange('first_name')}
+                            onBlur={formik.handleBlur('first_name')}
+                        />
+
+                        <div className="error">
+                            {formik.touched.first_name && formik.errors.first_name}
+                        </div>
+                    </div>
+
+                    <div className="input-box">
+                        <label htmlFor="last_name"><strong>Last Name</strong></label>
+
+                        <CustomInput 
+                            type='text' 
+                            name='last_name' 
+                            value={formik.values.last_name}
+                            onChange={formik.handleChange('last_name')}
+                            onBlur={formik.handleBlur('last_name')}
+                        />
+
+                        <div className="error">
+                            {formik.touched.last_name && formik.errors.last_name}
+                        </div>
+                    </div>
+
+                    <div className="input-box">
+                        <label htmlFor=""><strong>Password</strong></label>
+
+                        <CustomInput 
+                            type='password' 
+                            name='password' 
+                            // placeholder='Password'
+                            value={formik.values.password}
+                            onChange={formik.handleChange('password')}
+                            onBlur={formik.handleBlur('password')}
+                            />
+
+                        <div className="error">
+                            {formik.touched.password && formik.errors.password}
+                        </div>
+                    </div>
+
+                    <div className="input-box">
+                        <label htmlFor="email"><strong>Email</strong></label>
+                    
+                        <CustomInput 
+                            type='email' 
+                            name='email' 
+                            // placeholder='Email' 
+                            value={formik.values.email}
+                            onChange={formik.handleChange('email')}
+                            onBlur={formik.handleBlur('email')}
+                        />
+
+                        <div className="error">
+                            {formik.touched.email && formik.errors.email}
+                        </div>
+                    </div>
+
+                    <div className="input-box">
+                        <label htmlFor="phone_no"><strong>Phone Number</strong></label>
+                    
+                        <CustomInput 
+                            type='tel' 
+                            name='phone_no' 
+                            // placeholder='Phone Number'  
+                            className='mt-1 mb-3' 
+                            value={formik.values.phone_no}
+                            onChange={formik.handleChange('phone_no')}
+                            onBlur={formik.handleBlur('phone_no')}
+                        />
+
+                        <div className="error">
+                            {formik.touched.phone_no && formik.errors.phone_no}
+                        </div>
+                    </div>
+
+
 
                     <div className="input-btn">
                         <button type="submit" className="signin-btn"> Sign up</button>

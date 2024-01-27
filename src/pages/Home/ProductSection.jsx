@@ -5,7 +5,7 @@ import ashluxe_white_img from '../../assets/images/products/Ashluxe_Garden_LogoT
 import jeans_img from '../../assets/images/products/Ashluxetemplate_360x.webp'
 import ProductCard from '../../components/ProductCard'
 
-const ProductSection = () => {
+const ProductSection = ({ productState }) => {
   return (
 
 
@@ -13,10 +13,10 @@ const ProductSection = () => {
         <div class="product-container">
             <div class="product-list__items">
             
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
+                <ProductCard data={productState}/>
+                <ProductCard data={productState}/>
+                <ProductCard data={productState}/>
+                <ProductCard data={productState}/>
 
             
             </div>

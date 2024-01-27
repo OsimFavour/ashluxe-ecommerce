@@ -2,7 +2,7 @@ import React from 'react'
 import fela_img from '../../assets/images/products/fela_360x.webp'
 import ashluxe_black_img from '../../assets/images/products/ashluxe_garden_logo_t-shirt.webp'
 
-const ProductCard = () => {
+const ProductCard = ({ data }) => {
     return (
 
         <div className="row">
