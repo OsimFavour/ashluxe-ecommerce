@@ -5,36 +5,38 @@ import smallBanner03 from '../../assets/images/banner/small-banner-03.webp'
 
 const SmallBanner = () => {
     return (
-        <div className="pt-5">
-            <div className="row">
-            <div className="d-flex justify-content-between align-items-center">
+        <div className="pt-3">
+            <div className="container-xxl p-0">
+                <div className="row">
+                    <div className="d-flex justify-content-between align-items-center">
 
-                <div className="first-small-banner">
-                    <img
-                        src={smallBanner01} 
-                        className='img-fluid'
-                        alt="main banner" 
-                    />
-                    
+                        <div className="first-small-banner">
+                            <img
+                                src={smallBanner01} 
+                                className='img-fluid'
+                                alt="main banner" 
+                            />
+                            
+                        </div>
+
+                        <div className="small-banner">
+                            <img
+                                src={smallBanner02}  
+                                className='img-fluid'
+                                alt="main banner" 
+                            />
+                        </div>
+
+                        <div className="last-small-banner">
+                            <img
+                                src={smallBanner03} 
+                                className='img-fluid'
+                                alt="main banner" 
+                            />
+                        </div>
+
+                    </div>
                 </div>
-
-                <div className="small-banner">
-                    <img
-                        src={smallBanner02}  
-                        className='img-fluid'
-                        alt="main banner" 
-                    />
-                </div>
-
-                <div className="last-small-banner">
-                    <img
-                        src={smallBanner03} 
-                        className='img-fluid'
-                        alt="main banner" 
-                    />
-                </div>
-
-</div>
             </div>
         </div>
     )

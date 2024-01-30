@@ -4,7 +4,7 @@ import { toast } from 'react-toastify'
 
 
 const initialState = {
-    product: '',
+    products: [],
     isError: false,
     isLoading: false,
     isSuccess: false,
@@ -39,7 +39,8 @@ export const productSlice = createSlice({
                 state.isError = false
                 state.isLoading = false
                 state.isSuccess = true
-                state.product = payload
+                state.products = payload
+                console.log('Products:', state.products);
             })
             .addCase(getAllProducts.rejected, (state, action) => {
                 state.isError = true

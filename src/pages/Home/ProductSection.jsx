@@ -9,14 +9,18 @@ const ProductSection = ({ productState }) => {
   return (
 
 
-    <section class="product-overall">
-        <div class="product-container">
-            <div class="product-list__items">
+    <section className="product-overall">
+        <div className="product-container">
+
+            <div className="product-section-heading">
+              <h2 className='d-flex justify-content-start'>New Arrival</h2>
+            </div>
+
+            <div className="product-list__items mx-auto">
             
-                <ProductCard data={productState}/>
-                <ProductCard data={productState}/>
-                <ProductCard data={productState}/>
-                <ProductCard data={productState}/>
+                {productState?.map((productItem, index) => (
+                  <ProductCard key={index} data={productItem}/>
+                ))}
 
             
             </div>

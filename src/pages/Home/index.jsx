@@ -9,17 +9,19 @@ import React, { useEffect } from 'react'
 
 const Home = () => {
 
-    const productState = useSelector(state => state.product.product)
-    console.log(productState);
+    const productState = useSelector(state => state.product.products.message)
+    console.log('Product State', productState);
 
+    
+    useEffect(() => {
+        getProducts()
+    }, [])
+
+    
     const dispatch = useDispatch()
     const getProducts = () => {
         dispatch(getAllProducts())
     }
-
-    useEffect(() => {
-        getProducts()
-    }, [])
 
 
     return (

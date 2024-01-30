@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Banner = () => {
     return (
         <section>
-            <div className="banner-container">
+            <div className="banner-container container-xxl p-0">
                 <div className="banner">
                     <img src={banner} className='img-fluid' alt='banner' />
                     
