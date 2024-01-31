@@ -606,9 +606,12 @@ padding: 20px;
 }
 
 .community__social-media{
-margin-right: 29rem;
-padding-top: 10px;
+  margin-right: 29rem;
+  padding-top: 10px;
+  font-size: 24px;
 }
+
+/* style={{fontSize:'24px'}} */
 
 .footer{
 height: 300px;

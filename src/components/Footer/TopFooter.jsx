@@ -15,7 +15,7 @@ const TopFooter = () => {
                 </div>
         
                 <div className="community__social-media">
-                    <i className="fa fa-instagram" style="font-size:24px"></i>
+                    <i className="fa fa-instagram"></i>
                 </div>
             </div>
         </section>

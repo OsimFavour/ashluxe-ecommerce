@@ -1,5 +1,5 @@
 import React from 'react'
-import TopFooter from './BottomFooter'
+import TopFooter from './TopFooter'
 import BottomFooter from './BottomFooter'
 
 const Footer = () => {
