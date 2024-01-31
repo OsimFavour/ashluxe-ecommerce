@@ -1,21 +1,28 @@
+import { FaInstagram } from "react-icons/fa"
 import React from 'react'
 
 const TopFooter = () => {
     return (
-        <section className="community">
-            <div className="community__content">
-                <h2 className="community__title">Join Our Community</h2>
-                <p className="community__description">Be the first to get the latest updates on our promotion campaigns, products, and services.</p>
-            </div>
-        
-            <div className="community__subscription">
-                <div className="community__input-group">
-                    <input type="text" placeholder="Enter your email address" className="community__input"/>
-                    <input type="submit" value="join" className="community__subit"/>
+        <section className="community container-xxl mb-5">
+            <div className="row">
+                <div className="col-6">
+                    <div className="community-content">
+                        <h2 className="community-title">Join Our Community</h2>
+                        <p className="community-description">                                                                                             Be the first to get the latest updates on our promotion campaigns, products, and services.</p>
+                    </div>
                 </div>
-        
-                <div className="community__social-media">
-                    <i className="fa fa-instagram"></i>
+            
+                <div className="col-6">
+                    <div className="community-subscription">
+                        <div className="community-input-group">
+                            <input type="text" placeholder="Enter your email address" className="community-input"/>
+                            <input type="submit" value="join" className="community-submit"/>
+                        </div>
+                
+                        <div className="community-social-media">
+                            {/* <FaInstagram/> */}
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
